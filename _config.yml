@@ -1,5 +1,5 @@
 ---
-title: drawiin
+title: drawiin دراوين
 timezone: UTC
 collections:
   posts:
@@ -11,13 +11,17 @@ collections:
 defaults:
 - scope:
     path: ''
-    type: posts
+    type: base
   values:
-    layout: post
+    layout: base
     permalink: "/posts/:title/"
 - scope:
     path: ''
     type: pages
   values:
-    layout: page
+    layout: base
 permalink: pretty
+logo: "/uploads/logo_icon.png"
+description: Drawiin دراوين is a recently founded artist-run space in Carthage Mohamed Ali focused on agroecology, print, publishing, public programming and film.
+description_derja: سيد دو إيوسمود تيمبور إنكيديدونت أوت لابور إت دولور ماجنا أليكوا. إكسيبتيور سينت أوككيكات كوبيداتات نون برويدنت، سونت إن كولبا كوي أوفيسيا ديسيرونت.
+accent_color: "#FF7477"

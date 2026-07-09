@@ -1,0 +1,19 @@
+<nav id="site_nav">
+    <ul id="menu">
+	{% if site.pages %}
+        <li id="menu_button" class="page_link">
+            <a class="page_link" href="javascript:openMenu()"></a>
+        </li>
+        {% for page in site.pages %}
+            {% if page.title and page.title != "Home" %}
+                <li class="page_link_box">
+                    <a href="{{page.url}}" alt="{{page.title}}" class="page_link">{{page.title}}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+    </ul>
+    <div id="language_select">
+        <a href="">en</a> / <a href="">تو</a>
+    </div>
+</nav>

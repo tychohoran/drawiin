@@ -1,26 +1,194 @@
-html, body, #wrapper {
-    position: absolute;
+/* TYPE FACES */
+
+@font-face {
+    font-family: 'Suisse Intl';
+    src: url(/assets/SuisseIntl-Medium.otf)  format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Suisse Intl';
+    src: url(/assets/SuisseIntl-MediumItalic.otf)  format("opentype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* RESET CSS DEFAULTS */
+
+html, body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li, img, header, footer, main, nav, section, iframe, img, input, table, caption, tbody, tfoot, thead, tr, th, td,
+article {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     margin: 0;
     padding: 0;
+    border: 0;
+    font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* ROOT STYLES */
+
+html, body, #wrapper {
+    position: absolute;
     width: 100%;
     height: 100%;
+    line-height: 1.2;
+    font-size: 12pt;
+    font-family: 'Suisse Intl', Arial;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    kerning: auto;
 }
+
+ol, ul {
+	list-style: none;
+}
+
+a, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 6em;
+    line-height: 1;
+}
+h2 {
+    font-size: 4em;
+}
+h3 {
+    font-size: 3em;
+}
+h4 {
+    font-size: 2em;
+}
+h5 {
+    font-size: 1.5em;
+}
+
+h6 {
+    font-size: 1.25em;
+}
+
+p {
+    line-height: 1.5;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* FRAMEWORK STYLES */
 
 #wrapper {
+    max-width: 100%;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
-    background: url("uploads/drawiin_background.jpeg") rgba(0 , 0, 0, 0.5);
-    background-blend-mode: multiply;
-    background-size:cover;
+    align-items: flex-start;
 }
 
-#logo {
-    width: calc(100% - 100px);
+nav#site_nav{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 100;
+}
+
+nav#site_nav > * {
+    background-color: white;
+    padding: 1em;
+}
+
+#menu #menu_button a{
+    display: block;
+    width: 100%;
+}
+
+#menu {
+    max-height: 3em;
+    max-width: 50%;
+}
+
+#menu.active {
+    max-height: none;
+}
+
+#menu #menu_button a::before{
+    content: "→ ";
+}
+#menu #menu_button a::after{
+    content: "Menu";
+}
+
+#menu.active #menu_button a::before{
+    content: "↓ ";
+}
+#menu.active #menu_button a::after{
+    content: "";
+}
+
+#menu .page_link_box {
+    visibility: hidden;
+    margin-left: 2em;
+    text-indent: -1em;
+}
+
+#menu.active .page_link_box {
+    visibility: visible;
+}
+
+/* MAIN STYLES (PACING & SPACING) */
+
+main > * {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+
+main > *:first-child {
+    margin-top: 4rem;
+}
+
+main > p {
     max-width: 600px;
+}
+
+main > p:has(img) {
+    max-width: 100%;
+    padding: 0;
+    margin-top: 3rem;
+}
+
+main > p:has(img) > img {
+    max-height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* HOME PAGE */
+
+#header_img {
+    height: 8rem;
+    width: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
