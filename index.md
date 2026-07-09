@@ -1,5 +1,6 @@
 ---
 title: Home
+derja_text: 
 ---
 
 <img id="header_img" src="{{site.logo}}" alt="{{site.title}}">
