@@ -1,5 +1,6 @@
 ---
 title: Home
+published: false
 position: 0
 derja_text: |-
   <img id="header_img" src="/uploads/logo_icon.png" alt="drawiin logo">
