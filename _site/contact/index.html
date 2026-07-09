@@ -21,27 +21,28 @@
             <a class="page_link" href="javascript:openMenu()"></a>
         </li>
         
+        
             
-                <li class="page_link_box">
-                    <a href="/about/" alt="About" class="page_link">About</a>
-                </li>
+        
             
         
             
                 <li class="page_link_box">
-                    <a href="/contact/" alt="Contact" class="page_link">Contact</a>
+                    <a href="/" alt="Home" class="page_link">Home</a>
                 </li>
-            
-        
             
         
     
     </ul>
     <div id="language_select">
-        <a href="">en</a> / <a href="">تو</a>
+        <a href="?language=english" id="english_button">en</a> / <a href="?language=derja" id="derja_button">تو</a>
     </div>
 </nav>
 	<main id="site_main">
+		
+
+	</main>
+	<main id="site_main_derja">
 		
 
 	</main>
@@ -50,8 +51,24 @@
 </footer>
 </div>
 <script>
+
+    window.onload = function() {
+        parseLanguage();
+    };
+
     function openMenu() {
         document.getElementById('menu').classList.toggle('active');
+    }
+
+    function parseLanguage() {
+        var site_lang = "english";
+        var queryString = window.location.search;
+        var urlParams = new URLSearchParams(queryString);
+        var language = urlParams.get('language');
+        if(language){
+            site_lang = language;
+        }
+        document.getElementById('wrapper').classList.add(language);
     }
 </script>
 </body>

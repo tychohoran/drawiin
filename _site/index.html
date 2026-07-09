@@ -21,16 +21,9 @@
             <a class="page_link" href="javascript:openMenu()"></a>
         </li>
         
-            
-                <li class="page_link_box">
-                    <a href="/about/" alt="About" class="page_link">About</a>
-                </li>
-            
         
             
-                <li class="page_link_box">
-                    <a href="/contact/" alt="Contact" class="page_link">Contact</a>
-                </li>
+        
             
         
             
@@ -38,13 +31,33 @@
     
     </ul>
     <div id="language_select">
-        <a href="">en</a> / <a href="">تو</a>
+        <a href="?language=english" id="english_button">en</a> / <a href="?language=derja" id="derja_button">تو</a>
     </div>
 </nav>
 	<main id="site_main">
-		<p><img id="header_img" src="/uploads/logo_icon.png" alt="drawiin دراوين" /></p>
+		<p><img id="header_img" src="/uploads/logo_icon.png" alt="drawiin logo" /></p>
 
 <h4 id="drawiin-دراوين-is-a-recently-founded-artist-run-space-in-carthage-mohamed-ali-focused-on-agroecology-print-publishing-public-programming-and-film">Drawiin دراوين is a recently founded artist-run space in Carthage Mohamed Ali focused on agroecology, print, publishing, public programming and film.</h4>
+
+<p><img src="/uploads/sara_garden_drawing.jpg" alt="June 2026 Open Studio set up designed by Sara Bouzgarrou." /></p>
+
+<p>Alias quia sint vel laboriosam ullam totam ut veritatis. Qui amet inventore doloribus nulla est sit nihil. Ut enim velit accusamus commodi ea consequatur similique quaerat. Sequi est aut tempora quidem qui. Aut aliquam ut ea eum.</p>
+
+<p>Enim in quaerat nam ducimus. Velit quo sint deserunt dicta. Est dolorem velit quasi et provident expedita.</p>
+
+<p><img src="/uploads/openstudio_img1.jpg" alt="June 2026 Open Studio set up designed by Sara Bouzgarrou." /></p>
+
+<p>Animi adipisci rerum ullam occaecati. Dolor ex et qui sapiente exercitationem ab ipsa. Magni ullam eum ut quae. Perferendis in repudiandae nemo.</p>
+
+<p>Officiis accusamus quis eos veritatis eligendi sit. Aut rem consequatur ipsam aspernatur ut. Maiores beatae similique id quaerat voluptatum excepturi aspernatur.</p>
+
+<p>Blanditiis tempore debitis voluptates. Voluptas accusamus autem eius animi quas voluptatum. Quisquam provident ipsum et ut rem culpa consequatur velit.</p>
+
+	</main>
+	<main id="site_main_derja">
+		<p><img id="header_img" src="/uploads/logo_icon.png" alt="drawiin logo" /></p>
+
+<h4 id="سيد-دو-إيوسمود-تيمبور-إنكيديدونت-أوت-لابور-إت-دولور-ماجنا-أليكوا-إكسيبتيور-سينت-أوككيكات-كوبيداتات-نون-برويدنت-سونت-إن-كولبا-كوي-أوفيسيا-ديسيرونت">سيد دو إيوسمود تيمبور إنكيديدونت أوت لابور إت دولور ماجنا أليكوا. إكسيبتيور سينت أوككيكات كوبيداتات نون برويدنت، سونت إن كولبا كوي أوفيسيا ديسيرونت.</h4>
 
 <p><img src="/uploads/sara_garden_drawing.jpg" alt="June 2026 Open Studio set up designed by Sara Bouzgarrou." /></p>
 
@@ -66,8 +79,24 @@
 </footer>
 </div>
 <script>
+
+    window.onload = function() {
+        parseLanguage();
+    };
+
     function openMenu() {
         document.getElementById('menu').classList.toggle('active');
+    }
+
+    function parseLanguage() {
+        var site_lang = "english";
+        var queryString = window.location.search;
+        var urlParams = new URLSearchParams(queryString);
+        var language = urlParams.get('language');
+        if(language){
+            site_lang = language;
+        }
+        document.getElementById('wrapper').classList.add(language);
     }
 </script>
 </body>

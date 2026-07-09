@@ -4,8 +4,9 @@
         <li id="menu_button" class="page_link">
             <a class="page_link" href="javascript:openMenu()"></a>
         </li>
+        {% assign current_page = page.title %}
         {% for page in site.pages %}
-            {% if page.title and page.title != "Home" and page.published %}
+            {% if page.title and page.title != current_page and page.published%}
                 <li class="page_link_box">
                     <a href="{{page.url}}" alt="{{page.title}}" class="page_link">{{page.title}}</a>
                 </li>
@@ -14,6 +15,6 @@
     {% endif %}
     </ul>
     <div id="language_select">
-        <a href="">en</a> / <a href="">تو</a>
+        <a href="?language=english" id="english_button">en</a> / <a href="?language=derja" id="derja_button">تو</a>
     </div>
 </nav>

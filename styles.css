@@ -115,6 +115,49 @@ nav#site_nav > * {
     padding: 1em;
 }
 
+/* DERJA OPTION */
+
+main#site_main_derja {
+    display: none;
+}
+
+#wrapper.derja main#site_main_derja {
+    display: block;
+}
+
+#wrapper.derja main#site_main {
+    display: none;
+}
+
+#wrapper.derja nav#site_nav #language_select{
+    order: -1
+}
+
+nav#site_nav a#english_button{
+    color: var(--accent-color);
+}
+
+#wrapper.derja nav#site_nav a#derja_button{
+    color: var(--accent-color);
+}
+
+#wrapper.derja nav#site_nav a#english_button{
+    color: inherit;
+}
+
+#wrapper.derja nav#site_nav #menu{
+    text-align: right;
+    direction:rtl;
+}
+
+#wrapper.derja nav#site_nav #menu .page_link_box {
+    margin-left: 0;
+    margin-right: 2em;
+    text-indent: -1em;
+}
+
+/* MAIN MENU */
+
 #menu #menu_button a{
     display: block;
     width: 100%;

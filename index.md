@@ -1,9 +1,10 @@
 ---
 title: Home
+published: true
 derja_text: |-
-  <img id="header_img" src="{{site.logo}}" alt="{{site.title}}">
+  <img id="header_img" src="/uploads/logo_icon.png" alt="drawiin logo">
 
-  #### {{site.description}}
+  ####  سيد دو إيوسمود تيمبور إنكيديدونت أوت لابور إت دولور ماجنا أليكوا. إكسيبتيور سينت أوككيكات كوبيداتات نون برويدنت، سونت إن كولبا كوي أوفيسيا ديسيرونت.
 
   ![June 2026 Open Studio set up designed by Sara Bouzgarrou.](/uploads/sara_garden_drawing.jpg)
 
@@ -20,9 +21,9 @@ derja_text: |-
   Blanditiis tempore debitis voluptates. Voluptas accusamus autem eius animi quas voluptatum. Quisquam provident ipsum et ut rem culpa consequatur velit.
 ---
 
-<img id="header_img" src="{{site.logo}}" alt="{{site.title}}">
+<img id="header_img" src="/uploads/logo_icon.png" alt="drawiin logo">
 
-#### {{site.description}}
+#### Drawiin دراوين is a recently founded artist-run space in Carthage Mohamed Ali focused on agroecology, print, publishing, public programming and film.
 
 ![June 2026 Open Studio set up designed by Sara Bouzgarrou.](/uploads/sara_garden_drawing.jpg)
 

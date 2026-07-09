@@ -5,6 +5,9 @@
 	<main id="site_main">
 		{{ content | markdownify}}
 	</main>
+	<main id="site_main_derja">
+		{{ page.derja_text | markdownify }}
+	</main>
 	{% include footer.html %}
 </div>
 {% include javascript.html %}
