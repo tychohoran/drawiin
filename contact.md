@@ -1,4 +1,5 @@
 ---
 title: Contact
-visible: TRUE
+visible: true
 ---
+

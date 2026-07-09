@@ -1,6 +1,7 @@
 ---
 title: Home
 ---
+
 <img id="header_img" src="{{site.logo}}" alt="{{site.title}}">
 
 #### {{site.description}}

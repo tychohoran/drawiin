@@ -1,4 +1,5 @@
 ---
 title: About
-visible: TRUE
+visible: true
 ---
+
