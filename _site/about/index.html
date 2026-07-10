@@ -22,38 +22,99 @@
         </li>
         
         
+        
+            
+                <li class="page_link_box">
+                    <a href="/" alt="Home" class="page_link english_link">Home</a>
+                    <a href="/?language=derja" alt="الدار" class="page_link derja_link">الدار</a>
+                </li>
             
         
             
         
             
                 <li class="page_link_box">
-                    <a href="/" alt="Home" class="page_link">Home</a>
+                    <a href="/contact/" alt="Contact" class="page_link english_link">Contact</a>
+                    <a href="/contact/?language=derja" alt="اتصل بينا" class="page_link derja_link">اتصل بينا</a>
                 </li>
             
         
     
     </ul>
-    <div id="language_select">
-        <a href="?language=english" id="english_button">en</a> / <a href="?language=derja" id="derja_button">تو</a>
-    </div>
+    
 </nav>
+    <header id="site_header">
+    <a href="/">
+        <img id="header_img" src="/uploads/logo_icon_with_text.png" alt="drawiin دراوين">
+    </a>
+</header>
 	<main id="site_main">
-		
+		<h2 id="about-the-space">About the Space</h2>
+
+<p>Drawiin دراوين is a new artist-run space, collective design studio, and community library in Carthage, Tunisia focussed on environmental communication. Our studio is nestled between a small pine forest and a field of wheat in <a href="https://maps.app.goo.gl/BHiF3FjfSYJnk5wh6" target="_blank">Carthage Mohamed Ali</a>.</p>
+
+<h1><img src="/uploads/forest.jpg" alt="The Forest Behind the Studio" /></h1>
+
+<p>We collaborate closely with other artists, organizations, and our neighbors to produce prints, publications, landscape designs, films, workshops, pop-up events, and more. Remembering that cultural production is always political, we always work in tandem with movements for environmental justice and collective liberation.</p>
+
+<h2 id="-1"><img src="/uploads/welcome_to_drawiin.jpg" alt="Welcome to Drawiin sign" /></h2>
 
 	</main>
 	<main id="site_main_derja">
-		
+		<h2 id="about">About</h2>
+
+<p>Drawiin دراوين is a new artist-run space, collective design studio, and community library in Carthage, Tunisia focussed on environmental communication. We collaborate closely with other artists, organizations, and our neighbors to produce prints, publications, landscape designs, films, workshops, pop-up events, and more. Remembering that cultural production is always political, we always work in tandem with movements for environmental justice and collective liberation.</p>
 
 	</main>
 	<footer id="site_footer">
+    <div id="site_map" class="footer_box">
+        <!-- <p id="site_map_title">SITE MAP</p> -->
+        
+        
+            
+                <h5 class="page_link_box">
+                    <a href="/" alt="Home" class="page_link english_link">Home</a>
+                    <a href="/?language=derja" alt="الدار" class="page_link derja_link">الدار</a>
+                </h5>
+            
+        
+            
+                <h5 class="page_link_box">
+                    <a href="/about/" alt="About" class="page_link english_link">About</a>
+                    <a href="/about/?language=derja" alt="على الشركة" class="page_link derja_link">على الشركة</a>
+                </h5>
+            
+        
+            
+                <h5 class="page_link_box">
+                    <a href="/contact/" alt="Contact" class="page_link english_link">Contact</a>
+                    <a href="/contact/?language=derja" alt="اتصل بينا" class="page_link derja_link">اتصل بينا</a>
+                </h5>
+            
+        
+            </div>   
+    <div id="contact_info" class="footer_box">
+        
+<p><a href="https://maps.app.goo.gl/c171r8XBm6GzdqLU8">Carthage Mohamed Ali</a><br />
+Tunis, Tunisia<br />
+<br />
+<a href="mailto:info@drawiin.space">info@drawiin.space</a><br />
+<a href="/contact#mc_embed_shell">Join our Newsletter!</a></p>
 
+    </div>
+    <div id="credits">
+        Website designed by <a href="http://tychohoran.com/" alt="Tycho Horan">Tycho Horan</a> with contributions by Sara Bouzgarrou, Fredj Moussa, Fatma Maswood, and others. Typeset in <a href="https://www.swisstypefaces.com/fonts/suisse/#font">Suisse Int’l.</a>
+    <br>All content licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0.</a><br>
+        <br>
+        Updated July 2026.
+    </div>
 </footer>
 </div>
 <script>
 
     window.onload = function() {
         parseLanguage();
+        document.getElementById('weird_box').style.display = 'none';
     };
 
     function openMenu() {
