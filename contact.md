@@ -2,8 +2,9 @@
 title: Contact
 position: 2
 title_deja: اتصل بينا
-derja_text: |-
+derja_text: ''
 ---
+
 ## Collaborate With Us
 
 Our projects and programing are only made possible through close collaboration with our community, neighbors, and other organizations. We at Drawiin  دراوين invite you to reach out and dream. You can contact us over [email](mailto:info@drawiin.space) or follow our work on [Instagram](https://www.instagram.com/drawiin.space/){:target="_blank"} and [join our newsletter.](/contact#mc_embed_shell) Please also be patient when corresponding with us; Drawiin  دراوين is organized by a small but mighty collective on a volunteer basis.

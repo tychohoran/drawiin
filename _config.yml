@@ -20,25 +20,20 @@ defaults:
     type: pages
   values:
     layout: page
-    title_deja:
+    title_deja: 
     derja_text: 
-
 permalink: pretty
 logo: "/uploads/logo_icon.png"
 description: Drawiin دراوين is a recently founded artist-run space in Carthage Mohamed
   Ali focused on agroecology, print, publishing, public programming and film.
-description_derja: سيد دو إيوسمود تيمبور إنكيديدونت أوت لابور إت دولور ماجنا أليكوا. إكسيبتيور سينت أوككيكات كوبيداتات نون برويدنت، سونت إن كولبا كوي أوفيسيا ديسيرونت.
+description_derja: سيد دو إيوسمود تيمبور إنكيديدونت أوت لابور إت دولور ماجنا أليكوا.
+  إكسيبتيور سينت أوككيكات كوبيداتات نون برويدنت، سونت إن كولبا كوي أوفيسيا ديسيرونت.
 accent_color: "#FF7477"
 language_option_visible: false
-social_media:
+social_media: 
 footer_credit_text: |-
   Website designed by <a href="http://tychohoran.com/" alt="Tycho Horan">Tycho Horan</a> with contributions by Sara Bouzgarrou, Fredj Moussa, Fatma Maswood, and others. Typeset in <a href="https://www.swisstypefaces.com/fonts/suisse/#font">Suisse Int’l.</a>
       <br>All content licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0.</a><br>
-footer_contact_text: |-
-
-
-  [Carthage Mohamed Ali](https://maps.app.goo.gl/c171r8XBm6GzdqLU8)  
-  Tunis, Tunisia  
-  <br>
-  [info@drawiin.space](mailto:info@drawiin.space)  
-  [Join our Newsletter!](/contact#mc_embed_shell)
+footer_contact_text: "\n\n[Carthage Mohamed Ali](https://maps.app.goo.gl/c171r8XBm6GzdqLU8)
+  \ \nTunis, Tunisia  \n<br>\n[info@drawiin.space](mailto:info@drawiin.space)  \n[Join
+  our Newsletter!](/contact#mc_embed_shell)"

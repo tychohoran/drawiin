@@ -1,6 +1,5 @@
 ---
 title: Home
-published: true
 position: 0
 layout: base
 title_deja: الدار
