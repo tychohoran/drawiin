@@ -1,4 +1,8 @@
 <footer id="site_footer">
+    <div id="contact_info" class="footer_box">
+        {% include socialmedia.html %}
+        {{site.footer_contact_text | markdownify}}
+    </div>
     <div id="site_map" class="footer_box">
         <!-- <p id="site_map_title">SITE MAP</p> -->
         {% assign sorted_pages = site.pages | sort: "position" %}
@@ -11,8 +15,11 @@
             {% endif %}
         {% endfor %}
             </div>   
-    <div id="contact_info" class="footer_box">
-        {{site.footer_contact_text | markdownify}}
+    <div id="location_info" class="footer_box">
+        <div class="socialmedia_link" id="location_icon">
+            <a href="https://maps.app.goo.gl/c171r8XBm6GzdqLU8" target="_blank"><img src="/uploads/Location_Glyph_White.png" alt="Location Icon"></a>
+        </div>
+        {{site.footer_location_text | markdownify}}
     </div>
     <div id="credits">
         {{ site.footer_credit_text }}

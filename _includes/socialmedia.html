@@ -1,0 +1,11 @@
+{% if site.social_media %}
+<div id="socialmedia">
+    <ul id="socialmedia_list">
+        {% for socialmedia_link in site.social_media %}
+            <li class="socialmedia_link">
+                <a href="{{socialmedia_link.link}}" target="_blank"><img src="{{socialmedia_link.image}}" alt="{{socialmedia_link.name}}"></a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
