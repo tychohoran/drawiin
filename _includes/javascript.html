@@ -1,0 +1,22 @@
+<script>
+
+    window.onload = function() {
+        parseLanguage();
+        document.getElementById('weird_box').style.display = 'none';
+    };
+
+    function openMenu() {
+        document.getElementById('menu').classList.toggle('active');
+    }
+
+    function parseLanguage() {
+        var site_lang = "english";
+        var queryString = window.location.search;
+        var urlParams = new URLSearchParams(queryString);
+        var language = urlParams.get('language');
+        if(language){
+            site_lang = language;
+        }
+        document.getElementById('wrapper').classList.add(language);
+    }
+</script>

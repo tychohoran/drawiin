@@ -1,0 +1,24 @@
+<nav id="site_nav">
+    <ul id="menu">
+	{% if site.pages %}
+        <li id="menu_button" class="page_link">
+            <a class="page_link" href="javascript:openMenu()"></a>
+        </li>
+        {% assign current_page = page.title %}
+        {% assign sorted_pages = site.pages | sort: "position" %}
+        {% for page in sorted_pages %}
+            {% if page.title and page.title != current_page and page.published != "false"%}
+                <li class="page_link_box">
+                    <a href="{{page.url}}" alt="{{page.title}}" class="page_link english_link">{{page.title}}</a>
+                    <a href="{{page.url | append: '?language=derja' }}" alt="{{page.title_deja}}" class="page_link derja_link">{{page.title_deja}}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+    </ul>
+    {% if site.language_option_visible %}
+    <div id="language_select">
+        <a href="?language=english" id="english_button">en</a> / <a href="?language=derja" id="derja_button">تو</a>
+    </div>
+    {% endif %}
+</nav>
