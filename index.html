@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRAWIIN — Print, Publishing & Public Programming </title>
+    
+    <!-- Déclaration des polices Suisse Intl -->
+    <style>
+        @font-face {
+            font-family: 'SuisseIntl';
+            src: url('SuisseIntl-Medium.otf') format('opentype');
+            font-weight: 500;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'SuisseIntl';
+            src: url('SuisseIntl-MediumItalic.otf') format('opentype');
+            font-weight: 500;
+            font-style: italic;
+        }
+    </style>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandBg: '#000000',
+                        brandInk: '#FFFFFF',
+                        brandBorder: '#333333',
+                        brandMuted: '#A1A1AA'
+                    },
+                    fontFamily: {
+                        sans: ['SuisseIntl', 'sans-serif'],
+                        serif: ['SuisseIntl', 'sans-serif'],
+                        mono: ['SuisseIntl', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brandBg text-brandInk font-sans antialiased selection:bg-white selection:text-black">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="sticky top-0 z-50 bg-brandBg/90 backdrop-blur border-b border-brandBorder px-6 py-4 flex justify-between items-center">
+        <a href="#home" class="flex items-center gap-3">
+            <img src="LOGO POUR INSTA DRAWIIN.png" alt="DRAWIIN SPACE" class="h-8 w-auto invert object-contain">
+        </a>
+        
+        <!-- Navigation visible sur mobile et desktop -->
+        <nav class="flex gap-4 md:gap-6 font-sans text-xs uppercase tracking-wider text-brandInk">
+            <a href="#print" class="hover:underline">Print & Publications</a>
+            <a href="#programming" class="hover:underline">Public Programming</a>
+            <a href="#team" class="hover:underline">About</a>
+        </nav>
+
+        <!-- Localisation masquée sur mobile (hidden), visible sur desktop (md:block) -->
+        <div class="hidden md:block font-sans text-xs text-white">
+            Carthage Mohamed Ali, TN
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="max-w-6xl mx-auto px-6 py-12 space-y-24">
+
+        <!-- HERO & MANIFESTO (HOME) -->
+        <section id="home" class="border-b border-brandBorder pb-16">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+                <div class="md:col-span-8">
+                    <img src="LOGO POUR INSTA DRAWIIN.png" alt="DRAWIIN SPACE" class="h-8 w-auto invert object-contain mb-4">
+                    <span class="font-sans text-xs uppercase tracking-widest text-brandMuted block mb-4">[ Space Manifesto ]</span>
+                    <h1 class="text-3xl md:text-5xl leading-tight mb-8 text-white">
+                        An independent, multidisciplinary platform based in the forest of Carthage Mohamed Ali.
+                    </h1>
+                    <div id="about-space" class="space-y-4 text-lg text-gray-300 leading-relaxed">
+                        <p>
+                            Conceived as a site for situated experimentation, Drawiin operates at the intersection of visual arts, environmental documentation, critical publishing, and agroecology.
+                        </p>
+                        <p>
+                            Contemporary artistic practice and research must transcend institutional and academic silos to become a shared, accessible, and grounded process. We pay close attention to the languages, terminologies, and formats we use to ensure meaningful cultural accessibility for artists, researchers, neighbors, students, and local communities.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ADDRESS & LOCATION CARD -->
+                <div class="md:col-span-4 bg-black border border-brandInk p-6 shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] font-sans text-xs space-y-4">
+                    <div class="border-b border-brandBorder pb-2">
+                        <span class="block text-brandMuted uppercase">Location:</span>
+                        <p class="text-sm text-white">Forest of Carthage Mohamed Ali</p>
+                        <p class="text-gray-300">Tunis, Tunisia</p>
+                    </div>
+                    <div>
+                        <span class="block text-brandMuted uppercase">Contact & Web:</span>
+                        <p class="text-white">drawiin.space@gmail.com</p>
+                        <p class="text-white">drawiin.space</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRINT & PUBLICATIONS -->
+        <section id="print" class="border-b border-brandBorder pb-16">
+            <div class="flex items-baseline justify-between mb-8">
+                <h2 class="text-2xl uppercase tracking-tight text-white">01. Print & Publications</h2>
+                <span class="font-sans text-xs text-brandMuted">[ Micro-Publishing ]</span>
+            </div>
+
+            <p class="text-lg mb-10 max-w-3xl text-gray-300">
+                The print department treats paper as a portable exhibition space, an archive of collective memory, and a tool for financial solidarity and autonomy.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-1 gap-6">
+                <!-- Collaborations -->
+                <div class="border border-brandBorder p-5 bg-black space-y-3">
+                    <h3 class="font-sans text-xs uppercase text-white">Collaborations</h3>
+                    <ul class="text-sm space-y-2 text-gray-300">
+                        <li><strong class="text-white">Exhibition Human being-Being human, Fatma Charfi Survey, at Aïcha Gorgi Gallery and Blue Wind Project (Until October 25)</strong> Our commissioned publication is featured as part of Human being-Being human, a survey exhibition dedicated to the late Tunisian-Swiss artist Fatma Charfi (1955–2018), curated by Beya Othmani.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- PUBLIC PROGRAMMING -->
+        <section id="programming" class="border-b border-brandBorder pb-16 space-y-12">
+            <div>
+                <div class="flex items-baseline justify-between mb-8">
+                    <h2 class="text-2xl uppercase tracking-tight text-white">02. Public Programming</h2>
+                    <span class="font-sans text-xs text-brandMuted">[ Spatial Occupation ]</span>
+                </div>
+                
+                <p class="text-lg mb-10 max-w-3xl text-gray-300">
+                    Drawiin’s public programming reimagines formats of engagement between contemporary art and the public sphere through participatory, experimental, and social formats.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                    <!-- Residencies -->
+                    <div class="border border-brandBorder p-6 bg-black space-y-4">
+                        <h3 class="font-sans text-sm uppercase text-white">Residencies</h3>
+                        <ul class="space-y-3 text-sm text-gray-300">
+                            <li><strong class="text-white">First Artist-in-Residence: Ines Hosni (October 4 – October 13)</strong> We are excited to welcome Ines Hosni as Drawiin Space’s very first resident artist. Follow us for updates on her work and public gathering moments.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Curated Screenings -->
+                    <div class="border border-brandBorder p-6 bg-black space-y-4">
+                        <h3 class="font-sans text-sm uppercase text-white">Curated Screenings</h3>
+                        <ul class="space-y-3 text-sm text-gray-300">
+                            <li><strong class="text-white">Film Screenings & Collective Reading at E-FEST (October 30 – November 1)</strong> This first edition of E-FEST, dedicated to film screenings and collective readings, symbolically revives the original purpose of Ksar El Ferch: a place where residents once gathered to pass down oral history, share stories, and build community. The aim here is to bring back certain presences from the past, those that continue to haunt our lands and our imaginations, so that we may better examine them, understand them, and, perhaps, let them go. E-FEST’s video and reading program has been designed in three phases, as an invitation to look at and rethink the territory around us. The recent discovery in the region of the fossil of the largest crocodile in history reminds us that this landscape, too often described as a “desert”, is not an empty space. On the contrary, it is crisscrossed by numerous geological, historical, and memorial layers that bear witness to successive presences and a territory deeply inhabited. A program curated by Drawiin.
+                            <br><br>
+                            <em>Film Screenings :</em> Al Yaoum, by Akram Zaatari<br>
+                            <em>Collective Reading :</em> In the essay Against the Regime of “Emptiness”, published in the anthology Deserts Are Not Empty* by historian Samia Henni.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PERMACULTURE INTEGRATED INTO PUBLIC PROGRAMMING -->
+            <div class="pt-6 border-t border-brandBorder/50">
+                <div class="flex items-baseline justify-between mb-6">
+                    <h3 class="text-xl uppercase tracking-tight text-white">Permaculture & Situated Ecologies</h3>
+                    <span class="font-sans text-xs text-brandMuted">[ Land & Community ]</span>
+                </div>
+
+                <p class="text-lg mb-8 max-w-3xl text-gray-300">
+                    This department challenges passive notions of "greenery" and green gentrification, framing ecological issues as inseparable from class struggle, land rights, and social justice.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="border border-brandBorder p-6 bg-black space-y-4">
+                        <h4 class="font-sans text-sm uppercase text-white">Certified Training & Theory</h4>
+                        <p class="text-sm leading-relaxed text-gray-300">
+                            <strong class="text-white">PDC (Permaculture Design Course):</strong> Certified design courses led by Maha Mouelhi (Zerri3a.tn). The curriculum integrates soil health, water management, seed saving, and natural building within the context of Carthage Mohamed Ali.
+                        </p>
+                    </div>
+
+                    <div class="border border-brandBorder p-6 bg-black space-y-4">
+                        <h4 class="font-sans text-sm uppercase text-white">Neighborhood Engagement</h4>
+                        <ul class="space-y-3 text-sm text-gray-300">
+                            <li><strong class="text-white">Communal Garden & Seed Library:</strong> A collective farming space for preserving heirloom seeds and promoting community stewardship of the forest.</li>
+                            <li><strong class="text-white">Agroecology Pop-up Market:</strong> A weekly market in partnership with Zerri3a.tn connecting local residents with organic growers and artisanal producers.</li>
+                            <li><strong class="text-white">Workshops x Voisins (Neighbors):</strong> Co-designing landscape interventions with neighborhood youth and families to counter green gentrification.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT / TEAM SECTION -->
+        <section id="team" class="pb-16">
+            <div class="flex items-baseline justify-between mb-8">
+                <h2 class="text-2xl uppercase tracking-tight text-white">03. About / Team</h2>
+                <span class="font-sans text-xs text-brandMuted">[ Artistic Direction ]</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Sara -->
+                <div class="border border-brandBorder p-6 bg-black space-y-3">
+                    <span class="font-sans text-xs text-brandMuted uppercase block">Artist - Small Press Publisher Cultural Projects & Print Consultant</span>
+                    <h3 class="text-2xl text-white">Sara Bouzgarrou</h3>
+                    <p class="text-sm text-gray-300 leading-relaxed">
+                        Head of Production, Printmaking Workshops, and the Publishing & Micro-Editions Department at Drawiin.
+                    </p>
+                </div>
+
+                <!-- Fredj -->
+                <div class="border border-brandBorder p-6 bg-black space-y-3">
+                    <span class="font-sans text-xs text-brandMuted uppercase block">Artist & Filmmaker</span>
+                    <h3 class="text-2xl text-white">Fredj Moussa</h3>
+                    <p class="text-sm text-gray-300 leading-relaxed">
+                        Head of Public Programming, Screenings, Residency Programs, Communication, and Artistic Partnerships at Drawiin.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-brandBorder px-6 py-8 font-sans text-xs text-center md:flex md:justify-between text-brandMuted">
+        <div>DRAWIIN SPACE © 2026 — Carthage Mohamed Ali, Tunis</div>
+        <div class="mt-2 md:mt-0 text-white">drawiin.space</div>
+    </footer>
+
+</body>
+</html>
